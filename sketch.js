@@ -763,31 +763,31 @@ lista_unidades.newUnidade(640+100*basex[3], 250+100*basey[3], 875, 650, 0)
 function draw_sub_tela(){
   background(0);
   if(tela == 1){
-    image(slide_1, 0, 0)
+    image(slide_1, 0, 0, 1280, 720)
   }
   if(tela == 2){
-    image(slide_2, 0, 0)
+    image(slide_2, 0, 0, 1280, 720)
   }
   if(tela == 3){
-    image(slide_3, 0, 0)
+    image(slide_3, 0, 0, 1280, 720)
   }
   if(tela == 4){
-    image(slide_4, 0, 0)
+    image(slide_4, 0, 0, 1280, 720)
   }
   if(tela == 5){
-    image(slide_5, 0, 0)
+    image(slide_5, 0, 0, 1280, 720)
   }
   if(tela == 6){
-    image(slide_6, 0, 0)
+    image(slide_6, 0, 0, 1280, 720)
   }
   if(tela == 7){
-    image(slide_7, 0, 0)
+    image(slide_7, 0, 0, 1280, 720)
   }
   if(tela == 8){
-    image(slide_8, 0, 0)
+    image(slide_8, 0, 0, 1280, 720)
   }
   if(tela == 9){
-    image(slide_9, 0, 0)
+    image(slide_9, 0, 0, 1280, 720)
   }
   if(botao_menu.verifyhover()){
     botao_menu.draw_hover_botao();
