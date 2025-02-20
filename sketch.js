@@ -762,6 +762,33 @@ lista_unidades.newUnidade(640+100*basex[3], 250+100*basey[3], 875, 650, 0)
 
 function draw_sub_tela(){
   background(0);
+  if(tela == 1){
+    image(slide_1, 0, 0)
+  }
+  if(tela == 2){
+    image(slide_2, 0, 0)
+  }
+  if(tela == 3){
+    image(slide_3, 0, 0)
+  }
+  if(tela == 4){
+    image(slide_4, 0, 0)
+  }
+  if(tela == 5){
+    image(slide_5, 0, 0)
+  }
+  if(tela == 6){
+    image(slide_6, 0, 0)
+  }
+  if(tela == 7){
+    image(slide_7, 0, 0)
+  }
+  if(tela == 8){
+    image(slide_8, 0, 0)
+  }
+  if(tela == 9){
+    image(slide_9, 0, 0)
+  }
   if(botao_menu.verifyhover()){
     botao_menu.draw_hover_botao();
     cursor('pointer')
@@ -776,15 +803,24 @@ let animation_1 = 0
 let botao_menu = {
   xpos : 0,
   ypos : 0,
-  l : 100,
-  a : 20,
+  l : 150,
+  a : 40,
   draw_botao(){
     fill(100, 200, 200)
     rect(this.xpos, this.ypos, this.l, this.a)
+    fill(0); // Cor do texto (preto)
+    textSize(20); // Tamanho do texto
+    textAlign(CENTER, CENTER); // Alinhamento do texto no centro do botão
+    text("VOLTAR", this.xpos + this.l / 2, this.ypos + this.a / 2);
+    
   },
   draw_hover_botao(){
     fill(200)
     rect(this.xpos, this.ypos, this.l, this.a)
+    fill(0); // Cor do texto (preto)
+    textSize(20); // Tamanho do texto
+    textAlign(CENTER, CENTER); // Alinhamento do texto no centro do botão
+    text("VOLTAR", this.xpos + this.l / 2, this.ypos + this.a / 2);
   }, 
   verifyhover(){
     if(mouseX > this.xpos && mouseX < this.xpos+this.l && mouseY > this.ypos && mouseY < this.ypos+this.a)
@@ -812,6 +848,16 @@ function preload() {
   a_intro = loadImage('images/A.png')
   l_intro = loadImage('images/L.png')
   t2_intro = loadImage('images/T2.png')
+
+  slide_1 = loadImage('images/slides/2.jpg')
+  slide_2 = loadImage('images/slides/4.jpg')
+  slide_3 = loadImage('images/slides/3.jpg')
+  slide_4 = loadImage('images/slides/1.jpg')
+  slide_5 = loadImage('images/slides/5.jpg')
+  slide_6 = loadImage('images/slides/8.jpg')
+  slide_7 = loadImage('images/slides/7.jpg')
+  slide_8 = loadImage('images/slides/6.jpg')
+  slide_9 = loadImage('images/slides/9.jpg')
 }
 
 function setup() {
@@ -1090,7 +1136,7 @@ function draw() {
 
   //Unidade
   else if(tela == 8){
-    background(100)
+    image(slide_8, 0, 0)
   }
 }
 
