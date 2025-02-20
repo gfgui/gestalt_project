@@ -1136,7 +1136,7 @@ function draw() {
 
   //Unidade
   else if(tela == 8){
-    image(slide_8, 0, 0)
+    image(slide_8, 0, 0, 1280, 720)
   }
 }
 
